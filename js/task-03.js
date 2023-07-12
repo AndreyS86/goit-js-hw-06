@@ -25,5 +25,7 @@ const makeGalleryCard = ({ url, alt }) =>
   const markup = images.map((el)=> makeGalleryCard(el));
 
   galleryEl.insertAdjacentHTML("afterbegin", markup);
-  console.log(galeryEl);
+  console.log(galleryEl);
+
+  galleryEl.classList.add("galleryFlex")
 
