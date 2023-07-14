@@ -22,9 +22,9 @@ const makeGalleryCard = ({ url, alt }) =>
   </a>
   </li>`;
 
-const markup = images.map((el) => makeGalleryCard(el))
-.join(" ");
+const markup = images.map((el) => makeGalleryCard(el)).join(" ");
 
 galleryEl.insertAdjacentHTML("afterbegin", markup);
 
-galleryEl.classList.add("galleryFlex");
+document.querySelector(`.gallery`).style.display = "flex";
+
